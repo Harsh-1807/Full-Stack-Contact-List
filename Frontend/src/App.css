@@ -1,0 +1,116 @@
+/* General styling for input, button, and label */
+input, button, label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #007BFF; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Modal container styling */
+.modal {
+  position: fixed;
+  z-index: 1000; /* Ensures modal is on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  margin: auto;
+  padding: 30px;
+  border: none; /* Removed border */
+  width: 70%; /* Adjusted width */
+  max-width: 600px; /* Maximum width */
+  animation: slide-down 0.3s ease-out; /* Slide-down effect */
+}
+
+/* Close button styling */
+.close {
+  color: #333; /* Dark color */
+  float: right;
+  font-size: 24px; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer; /* Pointer cursor */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000; /* Red color on hover/focus */
+  text-decoration: none; /* No underline */
+}
+
+/* Keyframes for slide-down effect */
+@keyframes slide-down {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styling for the contact list table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+td {
+  background-color: #fff;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Main button styling */
+.main-button {
+  margin: 20px 0;
+  background-color: #28a745; /* Green button color */
+}
+
+.main-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
